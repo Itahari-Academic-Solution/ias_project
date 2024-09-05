@@ -1,10 +1,13 @@
 /* Reset styles */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     letter-spacing: 1.5px;
-    font-family: 'jost';
+    font-family:sans-serif;
+  
 }
 
 /* Global styles */
@@ -14,17 +17,3 @@ body {
    
 }
 
-a{
-  text-decoration: none;
-  list-style: none;
-  font-size: .9rem;
-}
-.nav{
-  background-color: rgb(196, 255, 255);
-  height: 40px;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
