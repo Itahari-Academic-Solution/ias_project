@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="bg-white border-gray-200 py-2.5">
-        <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 ">
+        <div className="flex flex-wrap items-center justify-between px-4 w-full h-full  ">
           <Link to="/" className="flex items-center">
             <img src={IASLogo} style={{ height: '64px' }} className="mr-3 sm:h-9" alt="IAS Logo" />
             <span className="self-center text-sm font-medium whitespace-nowrap">Itahari Academic Solution</span>
