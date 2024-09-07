@@ -14,24 +14,20 @@ function App() {
 
   return (
     <Router>
-      
-
-
       <div className="relative">
-      {/* Background (hero section) */}
-      <div className="hero h-[480px] opacity-60 absolute inset-0 z-0"></div>
+        {/* Background (hero section) */}
+        <div className="hero h-[480px] opacity-60 absolute inset-0 z-0"></div>
 
-      {/* Foreground (navbar or other content) */}
-      <div className="relative z-10">
-        <Navbar />
-        {/* Your foreground content here */}
-        <div className="text-center  items-center mt-10">
-          {/* <h1 className="text-black text-4xl">Welcome to the Hero Section</h1> */}
+        {/* Foreground (navbar or other content) */}
+        <div className="relative z-10">
+          <Navbar />
+          {/* Your foreground content here */}
+          <div className="text-center  items-center mt-10">
+            {/* <h1 className="text-black text-4xl">Welcome to the Hero Section</h1> */}
+          </div>
         </div>
       </div>
-    </div>
       <div className="container mx-auto">
-      
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
