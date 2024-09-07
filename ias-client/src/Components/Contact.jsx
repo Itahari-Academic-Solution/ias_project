@@ -7,8 +7,8 @@ export default function Contact() {
       <section className="text-gray-600 body-font relative">
         <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap gap-8">
          
-          <div className=" md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 gap-2">
-            <h2 className="text-gray-900 text-5xl mb-1 ">Feedback Or Query</h2>
+          <div className=" md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 gap-4">
+            <h2 className="text-gray-900 text-5xl mb-1 ">Contact  </h2>
             <p className="leading-relaxed mb-5 text-gray-600">
             Thank you for your email! We will get back to you shortly with improved solutions.
             </p>

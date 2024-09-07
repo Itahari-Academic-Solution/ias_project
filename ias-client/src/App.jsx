@@ -19,7 +19,7 @@ function App() {
 
       <div className="relative">
       {/* Background (hero section) */}
-      <div className="hero h-[680px] opacity-60 absolute inset-0 z-0"></div>
+      <div className="hero h-[480px] opacity-60 absolute inset-0 z-0"></div>
 
       {/* Foreground (navbar or other content) */}
       <div className="relative z-10">
