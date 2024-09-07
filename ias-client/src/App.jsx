@@ -28,7 +28,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto">
+      <div className="">
         <div>
           <Routes>
             <Route path="/" element={<Home />} />

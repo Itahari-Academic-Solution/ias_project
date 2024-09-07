@@ -4,11 +4,12 @@ export default function Contact() {
   return (
     <>
      
-      <section className="text-gray-600 body-font relative">
-        <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap gap-8">
+      <section className="text-gray-600 body-font relative container mx-auto">
+      <h2 className="text-gray-900 text-5xl mb-4 font-light">Contact</h2>
+        <div className="container px-5 py-16 mx-auto flex sm:flex-nowrap flex-wrap gap-8">
          
           <div className=" md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 gap-4">
-            <h2 className="text-gray-900 text-5xl mb-1 ">Contact  </h2>
+           
             <p className="leading-relaxed mb-5 text-gray-600">
             Thank you for your email! We will get back to you shortly with improved solutions.
             </p>
@@ -38,9 +39,13 @@ export default function Contact() {
                 className="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </div>
-            <button className="text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Button</button>
+
+            <div className="flex justify-center items-center">
+            <button className="text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded-xl  text-lg w-48">Button</button>
+            </div>
             
           </div>
+          
           <div className=" md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative ">
             <iframe
               width="100%"
