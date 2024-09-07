@@ -6,9 +6,9 @@ export default function Home() {
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-stretch"> 
           <div className="lg:flex-grow md:w-1/2 lg:pr-32 lg:p-10 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center gap- ">
-            <h1 className="title-font sm:text-4xl lg:text-6xl mb-4 font-medium text-gray-900">
+            <h1 className="title-font sm:text-4xl lg:text-6xl mb-4 font-semibold text-gray-900 lg:leading-snug">
             Unlock Your Potential 
-              <br className="hidden lg:inline-block" /> with Education
+              <br className="hidden lg:inline-block " /> with Education
             </h1>
             <p className="mb-8 leading-relaxed mt-4 mb-24">
             Join us in shaping the leaders of tomorrow through innovative education and unwavering support.

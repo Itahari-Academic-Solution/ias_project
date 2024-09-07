@@ -27,7 +27,7 @@ export default function Navbar() {
             <span className="self-center text-sm font-medium whitespace-nowrap">Itahari Academic Solution</span>
           </Link>
           <div className="flex items-center lg:order-2">
-            <Link to="/" className="bg-[#FFDCD9] hover:bg-[#FFCECB] rounded-full text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0">
+            <Link to="/" className="bg-[#E7E8EC] hover:bg-[#FFCECB] rounded-full text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0">
               <img src={mapImage} alt="location of IAS" className="h-10 w-10" />
             </Link>
             <button 
