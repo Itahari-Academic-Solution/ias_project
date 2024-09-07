@@ -33,7 +33,7 @@ export default function Home() {
       <div className="patner-col lg:h-[580px] sm:h-[800px] sm:p-10   p-1 lg:flex justify-center items-center mb-20">
       <CarouselComponent/>
       </div>
-      <div className="collaboration-col lg:h-[1400px] p-2 lg:flex justify-center items-center ">
+      <div className="collaboration-col lg:h-[2000px] p-2 lg:flex justify-center items-center ">
       <Collaboration/>
       </div>
 

@@ -41,10 +41,13 @@ function App() {
           </Routes>
         </div>
       </div>
+
+      
       <div className="div">
         <Footer/>
       </div>
     </Router>
+    
   );
 }
 

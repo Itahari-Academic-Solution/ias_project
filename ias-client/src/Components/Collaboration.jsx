@@ -8,7 +8,8 @@ export default function Collaboration() {
         <div className="flex flex-col lg:p-10">
           <div className="prose text-gray-500 prose-sm prose-headings:font-normal prose-headings:text-xl">
             <div>
-              <h1>Simplified markup</h1>
+            <h1 className="text-gray-900 text-5xl mb-4 font-bold">Collaboration</h1>
+              <h2>Simplified markup</h2>
               <p className="text-balance">
                 See the code for this page to see how you can use Astro to simplify your markup.
               </p>
@@ -102,12 +103,13 @@ export default function Collaboration() {
               </div>
               <div className="h-full md:order-first">
                 <img
-                  src="https://i.pinimg.com/564x/59/41/a0/5941a02c048f6226031a0487451c2651.jpg"
+                  src="https://www.shutterstock.com/shutterstock/photos/2154311867/display_1500/stock-photo-vibrant-vertical-portrait-of-male-teacher-helping-student-using-computer-in-college-classroom-2154311867.jpg"
                   alt="#_"
                   className="bg-gray-200 shadow-box shadow-gray-500/30 overflow-hidden aspect-square w-full h-full object-cover object-center"
                 />
               </div>
             </div>
+            
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-24 items-center md:flex-row-reverse">
               <div>
                 <span className="text-gray-600 uppercase text-xs font-medium">Just because we can</span>
@@ -204,6 +206,99 @@ export default function Collaboration() {
               <div className="h-full">
                 <img
                   src="https://images.pexels.com/photos/3862389/pexels-photo-3862389.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="#_"
+                  className="bg-gray-200 shadow-box shadow-gray-500/30 overflow-hidden aspect-square w-full h-full object-cover object-center"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-24 items-center">
+              <div>
+                <span className="text-gray-600 uppercase text-xs font-medium">Because why not</span>
+                <p className="text-4xl mt-8 tracking-tighter font-semibold text-gray-700 text-balance">
+                  Innovative financial solutions for every situation
+                </p>
+                <p className="text-sm mt-4 text-gray-700 text-balance">
+                  Discover a variety of tools, services, and expert guidance tailored to your unique financial needs.
+                </p>
+                <div className="mt-6 text-xs font-medium grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-2 text-gray-950">
+                  <div className="inline-flex items-center gap-2 text-xs text-gray-700">
+                    <svg
+                      className="icon icon-tabler text-gray-700 size-4 icon-tabler-360"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M17 15.328c2.414-.718 4-1.94 4-3.328 0-2.21-4.03-4-9-4s-9 1.79-9 4 4.03 4 9 4" />
+                      <path d="M9 13l3 3-3 3" />
+                    </svg>
+                    <span className="text-gray-950 font-medium text-sm">Clear data visibility</span>
+                  </div>
+
+                  <div className="inline-flex items-center gap-2 text-xs text-gray-700">
+                    <svg
+                      className="icon icon-tabler text-gray-700 size-4 icon-tabler-antenna-bars-3"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M6 18v-3" />
+                      <path d="M10 18v-6" />
+                      <path d="M14 18v.01" />
+                      <path d="M18 18v.01" />
+                    </svg>
+                    <span className="text-gray-950 font-medium text-sm">Reduced external factors</span>
+                  </div>
+
+                  <div className="inline-flex items-center gap-2 text-xs text-gray-700">
+                    <svg
+                      className="icon icon-tabler text-gray-700 size-4 icon-tabler-load-balancer"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M12 13m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                      <path d="M12 20m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                      <path d="M12 16v3" />
+                      <path d="M12 10v-7" />
+                      <path d="M9 6l3-3 3 3" />
+                    </svg>
+                    <span className="text-gray-950 font-medium text-sm">Enhanced stability</span>
+                  </div>
+
+                  <div className="inline-flex items-center gap-2 text-xs text-gray-700">
+                    <svg
+                      className="icon icon-tabler text-gray-700 size-4 icon-tabler-brand-speedtest"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5.636 19.364a9 9 0 1 1 12.728 0" />
+                      <path d="M16 9l-4 4" />
+                    </svg>
+                    <span className="text-gray-950 font-medium text-sm">Accelerated times</span>
+                  </div>
+                </div>
+              </div>
+              <div className="h-full md:order-first">
+                <img
+                  src="https://www.shutterstock.com/shutterstock/photos/2154311867/display_1500/stock-photo-vibrant-vertical-portrait-of-male-teacher-helping-student-using-computer-in-college-classroom-2154311867.jpg"
                   alt="#_"
                   className="bg-gray-200 shadow-box shadow-gray-500/30 overflow-hidden aspect-square w-full h-full object-cover object-center"
                 />
