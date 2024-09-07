@@ -8,6 +8,7 @@ import Contact from "./Components/Contact";
 import Courses from "./Components/Courses";
 import Gallery from "./Components/Gallery";
 import About from "./Components/About";
+import { Button, Carousel } from 'flowbite-react';
 
 function App() {
   const [count, setCount] = useState(0);

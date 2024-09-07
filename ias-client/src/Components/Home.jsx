@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Carousel } from 'flowbite-react';
 export default function Home() {
   return (
     <>
@@ -10,7 +11,7 @@ export default function Home() {
             Unlock Your Potential 
               <br className="hidden lg:inline-block " /> with Education
             </h1>
-            <p className="mb-8 leading-relaxed mt-4 mb-24">
+            <p className="mb-8 leading-relaxed mt-4">
             Join us in shaping the leaders of tomorrow through innovative education and unwavering support.
             </p>
             <div className="flex justify-center">
@@ -27,6 +28,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+  
     </>
   );
 }
