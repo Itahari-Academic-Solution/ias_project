@@ -1,29 +1,37 @@
 import React, { useState } from 'react';
-import IASLogo from '../assets/Logo/ias.png'; 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import IASLogo from '../assets/Logo/ias.png';
+import mapImage from '../assets/map/map.png';
 
 export default function Navbar() {
-  // State to manage mobile menu visibility
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
-  // Function to toggle the mobile menu
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  // Helper function to add active class based on the current route
+  const getLinkClass = (path) => {
+    return location.pathname === path 
+      ? 'block py-2 pl-3 pr-4 text-white bg-pink-700 rounded lg:bg-transparent lg:text-pink-700 lg:p-0' 
+      : 'block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-pink-700 lg:p-0';
+  };
+
   return (
     <>
-      <nav className="bg-white border-gray-200 py-2.5">
-        <div className="flex flex-wrap items-center justify-between px-4 w-full h-full  ">
+      <nav className="border-gray-200 py-2.5 z-10 px-8">
+        <div className="flex flex-wrap items-center justify-between px-4 w-full h-full">
           <Link to="/" className="flex items-center">
             <img src={IASLogo} style={{ height: '64px' }} className="mr-3 sm:h-9" alt="IAS Logo" />
             <span className="self-center text-sm font-medium whitespace-nowrap">Itahari Academic Solution</span>
           </Link>
           <div className="flex items-center lg:order-2">
-            <Link to="/"
-              className="text-white bg-pink-700 hover:bg-pink-800 focus:ring-4 focus:ring-pink-300 text-sm rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0">Icon halera welcome</Link>
+            <Link to="/" className="bg-[#FFDCD9] hover:bg-[#FFCECB] rounded-full text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0">
+              <img src={mapImage} alt="location of IAS" className="h-10 w-10" />
+            </Link>
             <button 
-              onClick={toggleMobileMenu} // Attach the click handler
+              onClick={toggleMobileMenu}
               className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="mobile-menu-2" 
               aria-expanded={isMobileMenuOpen}>
@@ -39,29 +47,27 @@ export default function Navbar() {
           <div className={`items-center justify-between w-full lg:flex lg:w-auto lg:order-1 ${isMobileMenuOpen ? '' : 'hidden'}`} id="mobile-menu-2">
             <ul className="flex flex-col mt-4 text-sm font-light lg:flex-row lg:space-x-8 lg:mt-0">
               <li>
-                <Link to="/" className="block py-2 pl-3 pr-4 text-white bg-pink-700 rounded lg:bg-transparent lg:text-pink-700 lg:p-0" aria-current="page">Home</Link>
+                <Link to="/" className={`nav-link ${getLinkClass('/')}`}>Home</Link>
               </li>
               <li>
-                <Link to="/Courses" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-pink-700 lg:p-0">Courses</Link>
+                <Link to="/Courses" className={`nav-link ${getLinkClass('/Courses')}`}>Courses</Link>
               </li>
               <li>
-                <Link to="/Gallery" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-pink-700 lg:p-0">Gallery</Link>
+              <Link to="/Gallery" className={`nav-link ${getLinkClass('/Gallery')}`}>Gallery</Link>
               </li>
               <li>
-                <Link to="/News" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-pink-700 lg:p-0">News</Link>
+              <Link to="/News" className={`nav-link ${getLinkClass('/News')}`}>News</Link>
               </li>
               <li>
-                <Link to="/About" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-pink-700 lg:p-0">About</Link>
+              <Link to="/About" className={`nav-link ${getLinkClass('/About')}`}>About</Link>
               </li>
               <li>
-                <Link to="/Contact" className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-pink-700 lg:p-0">Contact</Link>
+              <Link to="/Contact" className={`nav-link ${getLinkClass('/Contact')}`}>Contact</Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
-      <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
     </>
   );
 }
