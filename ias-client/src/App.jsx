@@ -9,6 +9,7 @@ import Courses from "./Components/Courses";
 import Gallery from "./Components/Gallery";
 import About from "./Components/About";
 import { Button, Carousel } from 'flowbite-react';
+import Footer from "./Components/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -39,6 +40,9 @@ function App() {
             <Route path="/About" element={<About />} />
           </Routes>
         </div>
+      </div>
+      <div className="div">
+        <Footer/>
       </div>
     </Router>
   );

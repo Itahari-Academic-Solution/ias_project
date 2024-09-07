@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Carousel } from 'flowbite-react';
 import CarouselComponent from './CarouselComponent';
+import Collaboration from './Collaboration';
 export default function Home() {
   return (
     <>
@@ -29,9 +30,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="patner-col h-[480px] sm:p-10   p-1 lg:flex justify-center items-center">
+      <div className="patner-col lg:h-[580px] sm:h-[800px] sm:p-10   p-1 lg:flex justify-center items-center mb-20">
       <CarouselComponent/>
       </div>
+      <div className="collaboration-col lg:h-[1400px] p-2 lg:flex justify-center items-center ">
+      <Collaboration/>
+      </div>
+
+      
     </>
   );
 }

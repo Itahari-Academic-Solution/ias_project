@@ -137,7 +137,7 @@ export default function CarouselComponent() {
           </h1>
 
          <div className="w-full h-full">
-         <div className="flex flex-col gap-6 mt-2">
+         <div className="flex flex-col gap-6 mt-6">
             {features.map((feature, index) => (
               <div key={index} className="relative flex items-center">
                 {/* Dot */}
@@ -147,7 +147,7 @@ export default function CarouselComponent() {
 
                 {/* Line */}
                 {index !== features.length - 1 && (
-                  <div className="absolute top-4 left-3 w-1 h-10 bg-pink-300"></div>
+                  <div className="absolute top-2 left-2 w-1 h-12 bg-pink-300"></div>
                 )}
 
                 {/* Feature Label */}
