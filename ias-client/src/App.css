@@ -50,10 +50,11 @@ body {
   }
   
   .patner-col {
-    background: linear-gradient(to bottom, #F6F9FF, #FCFDFF, transparent);
+    background: linear-gradient(to bottom, rgba(246, 249, 255, 0.6), rgba(252, 253, 255, 0.6), rgba(255, 255, 255, 0));
+
   }
   
   .collaboration-col{
-    background: linear-gradient(to bottom, #F5FBF6, transparent);
+    background: linear-gradient(to bottom, #FAFDFF, transparent);
 
   }
