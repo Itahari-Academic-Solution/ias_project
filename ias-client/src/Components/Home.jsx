@@ -36,14 +36,67 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="Courses p-14">
+        <div className="container mx-auto mt-10">
+          <h3 className=" text-center text-gray-900 text-4xl mb-4 font-semibold">
+            Explore Our Popular Courses
+          </h3>
+          <div className="card grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
+            <div className=" flex flex-col  justify-center items-center p-8 rounded-xl boxshadow">
+              <i class="ri-id-card-line text-5xl text-red-400"></i>
+              <h2 className="text-xl font-bold text-gray-800 mt-6 mb-2">
+              Institute of Engineering 
+              </h2>
+
+              <p className="text-gray-700">
+                Lorem ipsum dolor sit amet consectetur.lorem8 Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit.{" "}
+              </p>
+            </div>
+            <div className=" flex flex-col  justify-center items-center p-8 rounded-xl boxshadow">
+              <i class="ri-hospital-line text-5xl text-green-400"></i>
+              <h2 className="text-xl font-bold text-gray-800 mt-6 mb-2">
+                Medical Field
+              </h2>
+
+              <p className="text-gray-700">
+                Lorem ipsum dolor sit amet consectetur.lorem8 Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit.{" "}
+              </p>
+            </div>
+            <div className=" flex flex-col  justify-center items-center p-8 rounded-xl boxshadow">
+              <i class="ri-computer-line text-5xl text-pink-400"></i>
+              <h2 className="text-xl font-bold text-gray-800 mt-6 mb-2">
+                Computer training
+              </h2>
+
+              <p className="text-gray-700 ">
+                Lorem ipsum dolor sit amet consectetur.lorem8 Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit.{" "}
+              </p>
+            </div>
+            <div className=" flex flex-col  justify-center items-center p-8 rounded-xl boxshadow">
+              <i class="ri-book-line text-5xl text-blue-400"></i>
+              <h2 className="text-xl font-bold text-gray-800 mt-6 mb-2">
+                11/12 Entrance
+              </h2>
+
+              <p className="text-gray-700">
+                Lorem ipsum dolor sit amet consectetur.lorem8 Lorem ipsum dolor
+                sit amet consectetur, adipisicing elit.{" "}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="patner-col lg:h-[580px] sm:h-[800px] sm:p-10   p-1 lg:flex justify-center items-center mb-20">
         <CarouselComponent />
       </div>
       <div className="collaboration-col p-2 xl:flex justify-center items-center h-full w-full">
         <Collaboration />
       </div>
-
-     
     </>
   );
 }

@@ -2,10 +2,12 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="container mx-auto">
-      <div>About</div>
+    <>
+    <div className="container mx-auto relative p-4">
+    <h2 className="text-gray-900 text-5xl mb-4 font-normal">About</h2>
 
     
     </div>
+    </>
   );
 }

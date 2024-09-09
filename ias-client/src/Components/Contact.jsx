@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <>
      
-      <section className="text-gray-600 body-font relative container mx-auto">
+      <section className="text-gray-600 body-font relative container mx-auto p-4">
       <h2 className="text-gray-900 text-5xl mb-4 font-light">Contact</h2>
         <div className="container px-5 py-16 mx-auto flex sm:flex-nowrap flex-wrap gap-8">
          

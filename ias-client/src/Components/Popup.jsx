@@ -22,8 +22,8 @@ export default function Popup() {
           style={{ transitionDelay: '100ms' }}
         >
             <ul>
-                <li><span className='text-pink-600 font-semibold text-lg'>Phone:</span> +977 980-4317636</li>
-                <li><span className='text-pink-600 font-semibold text-lg'>Email:</span> Itahari.ias@gmail.com</li>
+                <li><span className='text-pink-700 font-semibold text-lg'>Phone:</span> +977 980-4317636</li>
+                <li><span className='text-pink-700 font-semibold text-lg'>Email:</span> Itahari.ias@gmail.com</li>
             </ul>
         </div>
       </div>
