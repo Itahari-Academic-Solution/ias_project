@@ -10,6 +10,7 @@ import Gallery from "./Components/Gallery";
 import About from "./Components/About";
 import { Button, Carousel } from 'flowbite-react';
 import Footer from "./Components/Footer";
+import 'remixicon/fonts/remixicon.css'
 
 function App() {
   const [count, setCount] = useState(0);

@@ -3,6 +3,7 @@ import React from "react";
 import { Carousel } from "flowbite-react";
 import CarouselComponent from "./CarouselComponent";
 import Collaboration from "./Collaboration";
+import Popup from "./Popup";
 export default function Home() {
   return (
     <>
@@ -41,6 +42,8 @@ export default function Home() {
       <div className="collaboration-col p-2 xl:flex justify-center items-center h-full w-full">
         <Collaboration />
       </div>
+
+     
     </>
   );
 }

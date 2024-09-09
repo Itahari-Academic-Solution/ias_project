@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from "react-router-dom";
 import IASLogo from '../assets/Logo/ias.png';
 import mapImage from '../assets/map/map.png';
+import Popup from './Popup';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -27,9 +28,7 @@ export default function Navbar() {
             <span className="self-center text-sm font-medium whitespace-nowrap">Itahari Academic Solution</span>
           </Link>
           <div className="flex items-center lg:order-2">
-            <Link to="/" className="bg-[#E7E8EC] hover:bg-[#FFCECB] rounded-full text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0">
-              <img src={mapImage} alt="location of IAS" className="h-10 w-10" />
-            </Link>
+           <Popup/>
             <button 
               onClick={toggleMobileMenu}
               className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"

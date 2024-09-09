@@ -59,12 +59,12 @@ export default function Contact() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4438.575530142304!2d87.2679021762341!3d26.65752347680013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef6d005597a327%3A0xe45105967bdcb7f6!2sItahari%20Academic%20Solution%20(IAS)!5e1!3m2!1sen!2snp!4v1725692229329!5m2!1sen!2snp"
             
             ></iframe>
-            <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+            <div className="bg-white  md:relative flex flex-wrap py-6 rounded shadow-md ">
               <div className="lg:w-1/2 px-6">
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
                 <p className="mt-1">Itahari-8( near Pashupati Mandir )</p>
               </div>
-              <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
+              <div className="lg:w-1/2 px-6 mt-4 lg:mt-0 ">
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
                 <a className="text-red-500 leading-relaxed">Itahari.ias@gmail.com</a>
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
