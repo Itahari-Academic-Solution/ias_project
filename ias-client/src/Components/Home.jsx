@@ -4,6 +4,8 @@ import { Carousel } from "flowbite-react";
 import CarouselComponent from "./CarouselComponent";
 import Collaboration from "./Collaboration";
 import Popup from "./Popup";
+import About from "./About";
+import BoardOfDirectors from "./BoardOfDirectors";
 export default function Home() {
   return (
     <>
@@ -90,7 +92,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      <BoardOfDirectors/>
+<About/>
       <div className="patner-col lg:h-[580px] sm:h-[800px] sm:p-10   p-1 lg:flex justify-center items-center mb-20">
         <CarouselComponent />
       </div>

@@ -7,16 +7,16 @@ export default function Popup() {
     <div className="flex justify-center items-center">
       <div className="relative">
         <div
-          className="h-16 w-16 bg-pink-700 hover:bg-pink-800 rounded-full flex items-center justify-center text-white cursor-pointer"
+          className="h-10 w-10 bg-pink-700 hover:bg-pink-800 rounded-full flex items-center justify-center text-white cursor-pointer"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <span className="text-4xl text-center"><i class="ri-customer-service-2-line"></i></span>
+          <span className="text-3xl text-center"><i class="ri-customer-service-2-line"></i></span>
         </div>
 
         {/* Popup is always rendered but hidden with opacity */}
         <div
-          className={`absolute left-[-450%] bottom-0  bg-white text-black p-2 rounded-md shadow-lg z-30 transition-opacity duration-500 ease-in-out w-72  ${
+          className={`absolute left-[-750%] bottom-0  bg-[#FAFDFF] text-black p-2 rounded-md shadow-lg z-30 transition-opacity duration-500 ease-in-out w-72  ${
             isHovered ? 'opacity-100' : 'opacity-0 pointer-events-none'
           }`}
           style={{ transitionDelay: '100ms' }}
